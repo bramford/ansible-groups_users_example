@@ -1,0 +1,9 @@
+---
+- name: Add groups
+  group: name={{ item.name }}
+  with_items: unix_groups
+
+- name: Add users
+  user: name={{ item.name }}
+        uid={{ item.uid }}
+  with_items: unix_users

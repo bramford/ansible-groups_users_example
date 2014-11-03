@@ -1,0 +1,8 @@
+---
+unix_groups:
+- name: db
+unix_users:
+- name: username3
+  uid: 3456
+- name: username4
+  uid: 4567

@@ -1,0 +1,14 @@
+---
+- name: Add sysadmins group and users
+  hosts: hosts
+  vars_files:
+  - external_vars/groups_users_sysadmins.yml
+  roles:
+  - { role: groups_users, when: groups_users_sysadmins == True }
+
+- name: Add db group and users
+  hosts: hosts
+  vars_files:
+  - external_vars/groups_users_db.yml
+  roles:
+  - { role: groups_users, when: groups_users_db == True }

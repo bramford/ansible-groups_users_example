@@ -1,0 +1,8 @@
+---
+unix_groups:
+- name: sysadmins
+unix_users:
+- name: username1
+  uid: 1234
+- name: username2
+  uid: 2345
